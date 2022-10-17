@@ -1,0 +1,5 @@
+name: dw Views
+type: module
+description: Adds some custom views features (views_view_unformatted suggestions, rendered_markup)
+core_version_requirement: ^8 || ^9
+package: dw
