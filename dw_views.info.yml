@@ -1,5 +1,5 @@
-name: dw Views
+name: Views template suggestions
 type: module
-description: Adds some custom views features (views_view_unformatted suggestions, rendered_markup)
+description: Extends template suggestions for views (views-view, views-view-unformatted, views-view-table, views-view-field)
 core_version_requirement: ^8 || ^9
 package: dw
