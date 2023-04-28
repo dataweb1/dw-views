@@ -1,5 +1,5 @@
 name: Views template suggestions
 type: module
 description: Extends template suggestions for views (views-view, views-view-unformatted, views-view-table, views-view-field)
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: dw
