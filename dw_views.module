@@ -36,9 +36,11 @@ function dw_views_theme_suggestions_views_view_fields_alter(array &$suggestions,
   $suggestions[] = sprintf('views_view_fields__%s', $variables['view']->id());
   $suggestions[] = sprintf('views_view_fields__%1$s__%2$s', $variables['view']->id(), $variables['view']->current_display);
 
-  $field = $variables['field']->field;
+  if (version_compare(\Drupal::VERSION, '10', '<')) {
+    $field = $variables['field']->field;
   $suggestions[] = sprintf('views_view_fields__%1$s__%2$s', $variables['view']->id(), $field);
   $suggestions[] = sprintf('views_view_fields__%1$s__%2$s__%3$s', $variables['view']->id(), $variables['view']->current_display, $field);
+  }
 }
 
 function dw_views_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {
